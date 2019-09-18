@@ -66,13 +66,13 @@
         }
 
         function getMessages() {
-            $.get('http://localhost:3010/messages', (element) => {
+            $.get('http://localhost:5000/messages', (element) => {
                 console.log(element);
             })
         }
 
         function postMessages(message) {
-            $.post('http://localhost:3010/messages', message);
+            $.post('http://localhost:5000/messages', message);
             $('#name').val('');
             $('#message').val('');
         }
